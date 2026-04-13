@@ -92,7 +92,7 @@ export default function Contact() {
           <div className="w-20 h-1 bg-gradient-to-r from-blue-400 to-cyan-400 mx-auto rounded-full" />
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 max-w-4xl mx-auto">
           {/* Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -107,13 +107,13 @@ export default function Contact() {
                 Don&apos;t like forms? Send me an email. 👋
               </p>
 
-              <a href="mailto:muhammedyasir0023@gmail.com" className="group flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-blue-500/50 transition-colors w-fit">
-                <div className="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform">
+              <a href="mailto:muhammedyasir0023@gmail.com" className="group flex items-center gap-3 sm:gap-4 p-3 sm:p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-blue-500/50 transition-colors w-full sm:w-fit">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform flex-shrink-0">
                   <Mail className="w-5 h-5" />
                 </div>
-                <div>
-                  <p className="text-sm text-gray-400">Email me at</p>
-                  <p className="font-medium text-lg">muhammedyasir0023@gmail.com</p>
+                <div className="min-w-0">
+                  <p className="text-xs sm:text-sm text-gray-400">Email me at</p>
+                  <p className="font-medium text-sm sm:text-lg truncate">muhammedyasir0023@gmail.com</p>
                 </div>
               </a>
             </div>
@@ -156,7 +156,7 @@ export default function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <form className="space-y-6 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8" onSubmit={handleSubmit}>
+            <form className="space-y-6 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-5 sm:p-8" onSubmit={handleSubmit}>
               <div>
                 <label className="block text-sm font-medium text-gray-300 mb-2">Name</label>
                 <input
